@@ -1,0 +1,12 @@
+#! /bin/bash
+seconds=0
+hour=0
+munits=0
+second1=0
+echo "Enter The Seconds:"
+read second
+hour=$(( second / 3600 ))
+second=$(( second % 3600 ))
+munits=$(( second / 60 ))
+second1=$(( second % 60 ))
+echo "Equivalient time= $hour : $munits : $second1"

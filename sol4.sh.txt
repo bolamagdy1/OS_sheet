@@ -1,0 +1,5 @@
+#! /bin/bash
+celsius=0
+read -p  "Enter the degree celsius temperature:" celsius #To Print the message and the input in one line
+fahrenheit= echo "scale=4;$celsius*1.8 + 32" | bc
+echo $fahrenheit 
