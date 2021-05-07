@@ -1,0 +1,20 @@
+#! /bin/bash
+echo "enter positive number"
+read num
+count=0
+sum=0
+while [ $num -ne 0 ]
+do
+if((num < 0))
+then
+echo "Error, Enter positive number"
+read num
+else
+count=$((count+1))
+sum=$((sum+num))
+echo "Enter positive number"
+read num
+fi
+done
+sum=$((sum/count))
+echo "average = $sum"
